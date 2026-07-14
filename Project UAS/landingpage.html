@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Purri Donat | Landing Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#fff8f3;
+        }
+
+        .navbar{
+            background:#ff8c42;
+        }
+
+        .navbar-brand{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .hero{
+            padding:100px 0;
+            background:linear-gradient(to right,#ffb347,#ffcc70);
+        }
+
+        .hero h1{
+            font-size:55px;
+            font-weight:bold;
+            color:#5a2d0c;
+        }
+
+        .hero p{
+            font-size:20px;
+            color:#4d4d4d;
+        }
+
+        .btn-order{
+            background:#8b4513;
+            color:white;
+            border:none;
+            padding:12px 35px;
+            border-radius:30px;
+            transition:.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-order:hover{
+            background:#6d3207;
+            color: white;
+            transform:scale(1.05);
+        }
+
+        .section-title{
+            font-weight:bold;
+            color:#8b4513;
+        }
+
+        .card{
+            border:none;
+            border-radius:15px;
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0px 10px 20px rgba(0,0,0,.2);
+        }
+
+        .card img{
+            border-radius:15px 15px 0 0;
+            height:230px;
+            object-fit:cover;
+        }
+
+        .about{
+            background:white;
+            padding:70px 0;
+        }
+
+        .footer{
+            background:#8b4513;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#">🍩 Purri Donat</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#produk">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tentang">Tentang</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a href="login.html" class="btn btn-light fw-bold px-4 rounded-pill text-dark shadow-sm">
+        
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1>Donat Lembut, Manis, dan Fresh Setiap Hari</h1>
+                <p>Purri Donat merupakan UMKM lokal yang menyediakan berbagai varian donat premium dengan harga terjangkau.</p>
+                <a href="login.html" class="btn btn-order fw-bold">
+                    Login Sekarang
+                </a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="produk" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 section-title">Produk Favorit</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500">
+                    <div class="card-body text-center">
+                        <h5>Donat Coklat</h5>
+                        <p>Rp10.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521302200778-33500795e128?w=500">
+                    <div class="card-body text-center">
+                        <h5>Donat Strawberry</h5>
+                        <p>Rp12.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=500">
+                    <div class="card-body text-center">
+                        <h5>Donat Matcha</h5>
+                        <p>Rp13.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=500">
+                    <div class="card-body text-center">
+                        <h5>Donat Keju</h5>
+                        <p>Rp11.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tentang" class="about">
+    <div class="container text-center">
+        <h2 class="section-title mb-4">Tentang Purri Donat</h2>
+        <p class="lead">
+            Purri Donat adalah UMKM yang bergerak di bidang kuliner, khususnya donat homemade dengan bahan berkualitas.
+            Kami selalu mengutamakan rasa, kebersihan, dan pelayanan agar pelanggan mendapatkan pengalaman terbaik.
+        </p>
+    </div>
+</section>
+
+<section id="kontak" class="py-5">
+    <div class="container text-center">
+        <h2 class="section-title mb-3">Hubungi Kami</h2>
+        <p>📍 Banyuwangi, Jawa Timur</p>
+        <p>📞 0812-3456-7890</p>
+        <p class="mb-0">📧 purridonat@gmail.com</p>
+    </div>
+</section>
+
+<footer class="footer">
+    Copyright © 2026 | Purri Donat
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
